@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v16.0) AWS CFT to deploy a Active-Active solution integrated with TGW Connect, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-active-active-cloudformation",
+	"Description": "(v16.1) AWS CFT to deploy a Active-Active solution integrated with TGW Connect, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-active-active-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
@@ -1241,6 +1241,15 @@
 						"ToPort": "65535",
 						"CidrIp": {
 							"Ref": "CIDRForInstanceAccess"
+						}
+					},
+					{
+						"Description": "Allow TgwConnectCIDRBlock access to FGT",
+						"IpProtocol": "-1",
+						"FromPort": "0",
+						"ToPort": "65535",
+						"CidrIp": {
+							"Ref": "TgwConnectCIDRBlock"
 						}
 					},
 					{
