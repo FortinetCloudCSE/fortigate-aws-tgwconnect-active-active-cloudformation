@@ -1,6 +1,6 @@
 {
 	"AWSTemplateFormatVersion": "2010-09-09",
-	"Description": "(v16.1) AWS CFT to deploy a Active-Active solution integrated with TGW Connect, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-active-active-cloudformation",
+	"Description": "(v26.1.a) AWS CFT to deploy a Active-Active solution integrated with TGW Connect, repo: https://github.com/FortinetCloudCSE/fortigate-aws-tgwconnect-active-active-cloudformation",
 	"Metadata": {
 		"AWS::CloudFormation::Interface": {
 			"ParameterGroups": [
